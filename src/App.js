@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Header from './container/Header';
+import TextArea from './container/TextArea';
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 60%;
+  margin: 0 auto;
+  background: #0b7285;
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header />
+      <TextArea />
+    </Container>
   );
 }
 
