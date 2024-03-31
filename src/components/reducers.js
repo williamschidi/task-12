@@ -14,6 +14,15 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         notes: state.notes.filter((note) => note.id !== action.payload),
       };
+    case 'UPDATE_NOTE':
+      return {
+        ...state,
+        notes: state.notes.map((note) =>
+          note.id === action.payload.id
+            ? { ...note, text: action.payload.newText }
+            : note
+        ),
+      };
     default:
       return state;
   }

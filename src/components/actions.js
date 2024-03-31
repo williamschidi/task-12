@@ -7,3 +7,8 @@ export const deleteNote = (id) => ({
   type: 'DELETE_NOTE',
   payload: id,
 });
+
+export const updateNote = (id, newText) => ({
+  type: 'UPDATE_NOTE',
+  payload: { id, newText },
+});
