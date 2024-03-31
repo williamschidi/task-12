@@ -30,16 +30,13 @@ const Li = styled.li`
   width: 8rem;
   border-bottom: 0.2rem solid transparent;
   cursor: pointer;
-  &:hover {
-    background: #0c8599;
-  }
+
   &:hover > ${SubNav} {
     display: block;
     margin-top: 7rem;
-    padding: 1rem;
     margin-left: -3.2rem;
     position: absolute;
-    background: #0c8599;
+
     width: 20%;
   }
 `;
@@ -59,7 +56,6 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
 `;
-const Home = styled.div``;
 
 function Header() {
   return (
@@ -211,45 +207,6 @@ function Header() {
           </SubNav>
         </Li>
       </Ul>
-      {/* <Home>
-        <button>create</button>
-        <button>edit</button>
-        <button>save</button>
-        <button>delete</button>
-      </Home>
-      <div>
-        <button>
-          <HiMenuAlt2 />
-        </button>
-        <button>
-          <HiMenu />
-        </button>
-        <button>
-          <HiMenuAlt3 />
-        </button>
-      </div>
-      <div>
-        <button>B</button>
-        <button>I</button>
-        <button>U</button>
-      </div>
-      <div>
-        <button>Smaller</button>
-        <button>Normal</button>
-        <button>Larger</button>
-      </div>
-      <div>
-        <button style={{ backgroundColor: 'red' }}></button>
-        <button style={{ backgroundColor: 'blue' }}></button>
-        <button style={{ backgroundColor: 'green' }}></button>
-        <button style={{ backgroundColor: 'white' }}></button>
-        <button style={{ backgroundColor: 'black' }}></button>
-        <button style={{ backgroundColor: 'yellow' }}></button>
-      </div>
-      <div>
-        <button>•</button>
-        <button>1.</button>
-      </div> */}
     </Nav>
   );
 }
