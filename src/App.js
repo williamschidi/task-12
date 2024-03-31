@@ -1,22 +1,17 @@
-import styled from 'styled-components';
-import Header from './container/Header';
-import TextArea from './container/TextArea';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './components/store.js';
+import NotePad from './components/NotePad.js';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-  width: 60%;
-  margin: 0 auto;
-  background: #0b7285;
-`;
-function App() {
+const App = () => {
   return (
-    <Container>
-      <Header />
-      <TextArea />
-    </Container>
+    <Provider store={store}>
+      <div>
+        <h1>Notepad Application</h1>
+        <NotePad />
+      </div>
+    </Provider>
   );
-}
+};
 
 export default App;
