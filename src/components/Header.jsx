@@ -9,19 +9,19 @@ const Nav = styled.header`
   justify-content: space-between;
   color: #fff;
   border-bottom: 0.1rem solid #a7a1a1;
-  @media screen and (max-width: 600px) {
+  @media(max-width: 600px) {
     font-size: 1.2rem;
     padding: 1.5rem 2.5rem;
   }
 
-  @media screen and (min-width: 601px) and (max-width: 900px) {
+  @media(max-width: 900px) {
     padding: 1.8rem 2.5rem;
   }
 `;
 
 const H1 = styled.h1`
   font-size: 2.6rem;
-  @media screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     font-size: 1.8rem;
   }
 `;
@@ -32,7 +32,7 @@ const Ul = styled.ul`
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 601px) and (max-width: 900px) {
+  @media(min-width: 601px) and (max-width: 900px) {
     justify-content: space-between;
     gap: 0.1rem;
   }
@@ -45,7 +45,7 @@ const Li = styled.li`
   padding: 1.5rem 1.2rem;
   text-align: center;
   border-bottom: 0.1rem solid transparent;
-  @media screen and (min-width: 601px) and (max-width: 900px) {
+  @media(max-width: 900px) {
     padding: 1rem 0.3rem;
     font-size: 1.2rem;
     width: 10rem;
