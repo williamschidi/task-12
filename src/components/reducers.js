@@ -1,5 +1,7 @@
+import { loadNote } from "./localStorage";
+
 const initialState = {
-  notes: [],
+  notes: loadNote(),
 };
 
 const rootReducer = (state = initialState, action) => {

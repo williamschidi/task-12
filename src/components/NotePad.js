@@ -136,11 +136,14 @@ const NotePad = () => {
           placeholder="Add Your To-Does"
           value={inputValue}
           onChange={handleInputChange}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") handleAddNote();
+          }}
         />
         <Button onClick={handleAddNote}>Add To-Do</Button>
       </InputContainer>
       <List>
-        <H2>My To-Do items</H2>
+        <H2> {notes.length > 0 ? "My To-Do items" : ""}</H2>
         {notes.map((note) => (
           <Li key={note.id}>
             <Checkbox
